@@ -1,0 +1,14 @@
+html, body {
+    background-color: #21232a;
+    color:cyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 2vw;
+}
+
+button {
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-right: 10px;
+
+}

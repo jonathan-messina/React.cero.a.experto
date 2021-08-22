@@ -1,0 +1,66 @@
+<!-- Notas de Pruebas
+Hay dos tipos
+·Unitarias: enfocadas en pequeñas funcionalidades (rueda).
+·De Integracion:enfocadas en como reaccionas varias pruebas en conjunto(auto).
+
+Deben ser faciles de escribir y leer, confiables, rapidas y principalmente unitarias.
+
+Es muy preferible probar primero la ruta critica de la app y luego de eso, realizar otras pruebas.
+
+Los pasos en las pruebas son conocidos como : AAA.
+·Arrange (Arreglar)
+Se prepara el estado inicial(el sujeto a probar)
+Se inicializan variables y se importa lo necesario.
+
+·Act (Actuar)
+Se aplican acciones o estimulos al sujeto.
+Llamamos metodos, simulamos clicks, etc
+
+·Assert (Afirmar)
+Observar el comportamiento resultante,
+ej: que algo cambie, que algo incremente, o que nada suceda.
+
+----------------------------------------------------
+Las pruebas reducen los errores, pero no hacen la app libre de errores, ya que quizas no tomamos en cuenta x factor al formular las pruebas.
+Las pruebas pueden fallar, ya que al igual que el sujeto, son codigo escrito.
+Las pruebas son locales.
+
+
+·Todos los archivos con terminacion .test.js seran leidos por jest(sin importar su nombre o ubicacion) y ejecutados al momento de ejecutar las pruebas.
+
+Se ejecutan con:
+
+npm run test
+
+·Estructura de carpetas
+
+Al estructuras la carpeta de pruebas, es una buena practica el calcar la estructura del projecto a probar, asi sera mas sencillo encontrar las pruebas.
+
+
+Los console log tambien se ejecutan en las pruebas, por lo que para hacerlas, lo mejor es comentarlos o eliminarlos.
+
+·Seleccion de prueba
+
+En la consola de pruebas, se ejecutan a la vez muchos archivos, podemos seleccionar cuales queremos ver en detalle, presionando P y luego ingresando el nombre de la prueba buscada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
