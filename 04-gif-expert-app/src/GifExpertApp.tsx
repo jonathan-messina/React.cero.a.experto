@@ -1,24 +1,10 @@
 import React, { useState } from "react";
 import { AddCategory } from "./componentes/AddCategory";
-
-// type Category = {
-//   title: string;
-// };
-// type Props = {
-//   /*props properties*/
-// };
-// type State = {
-//   categories: { [key: string]: Category };
-// };
+import GifGrid from "./componentes/GifGrid";
+import "animate.css";
 
 export const GifExpertApp = () => {
-  //const categories = ['One punch','Dragon ball','Samurai X'];
-  // eslint-disable-next-line
-  const [categories, setCategories] = useState([
-    "One punch",
-    "Dragon ball",
-    "Samurai X",
-  ]);
+  const [categories, setCategories] = useState(["One Punch"]);
 
   // const handleAdd = () => {
   //   //al añadir algo a un estado, debemos traer la info del estado anterior, ya que sino lo
@@ -33,14 +19,12 @@ export const GifExpertApp = () => {
     <>
       <h2>GifExpertApp</h2>
       <AddCategory setCategories={setCategories} />
-
       <hr />
-      <button>Agregar</button>
       <ol>
-        {categories.map((category) => {
+        {categories.map((category) => (
           // eslint-disable-next-line
-          return <li key={category}>{category}</li>;
-        })}
+          <GifGrid key={category} category={category} />
+        ))}
       </ol>
     </>
   );
