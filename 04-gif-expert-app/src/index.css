@@ -26,3 +26,9 @@ h2 {
 hr {
   color: rgba(50, 45, 60, 1);
 }
+
+input {
+  font-size: 1.2ren;
+  color: gray;
+  width: 100%;
+}
