@@ -2,22 +2,13 @@ import { type } from "os";
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-type Category = {
-  title: any;
-};
-// type Props = {
-//   /*props properties*/
-// };
-// type State = {
-//   category: { [key: string]: Category };
-// };
 type ChildProps = {
   setCategories: (cats: any) => void;
 };
 
 export const AddCategory = ({ setCategories }: ChildProps) => {
   const [inputValue, setInputValue] = useState("");
-  // se puede llamarse de cualquier forma, es el lugar donde almacenamos transitoriamente la informacion, por razones de claridad usamos una sola letra
+  // e se puede llamar de cualquier forma, es el lugar donde almacenamos transitoriamente la informacion, por razones de claridad usamos una sola letra
   const handleInputChange = (e: { target: { value: any } }) => {
     setInputValue(e.target.value);
   };

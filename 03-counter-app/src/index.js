@@ -18,4 +18,5 @@ ReactDOM.render(<PrimeraApp saludo={saludo} />, divRoot);
 
 // ReactDOM.render(<CounterApp value={value} />, divCounter);
 
-//esta se toma como la instancia padre del componente, lo detallado en el archivo mismo del componente, es un hijo de esta instancia
+//esta se toma como la instancia padre del componente,
+//lo detallado en el archivo mismo del componente, es un hijo de esta instancia
