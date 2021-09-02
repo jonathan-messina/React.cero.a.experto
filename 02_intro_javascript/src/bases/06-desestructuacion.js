@@ -31,7 +31,8 @@ console.log(nombre3);
 console.log(edad);
 console.log(clave);
 
-//se pueden adicionar valores por defecto como argumentos, si el primer objeto ya posia el valor adicionado, se ignorara el valor por defecto y se utilizara el valor extraido del primer objeto
+//se pueden adicionar valores por defecto como argumentos, si el primer objeto ya poseia el valor adicionado,
+//se ignorara el valor por defecto y se utilizara el valor extraido del primer objeto
 
 const usContext = ({ clave, nombre, edad, nacionalidad = "Argentina" }) => {
   console.log(nombre, edad, nacionalidad);

@@ -7,7 +7,7 @@ const peticion = fetch(`http://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
 peticion //Promesas en cadena
   .then((resp) =>
     resp
-      .json() //rel resultado de la promesa, pasa al siguiente then
+      .json() //del resultado de la promesa, pasa al siguiente then
       .then(({ data }) => {
         const { url } = data.images.original;
 
